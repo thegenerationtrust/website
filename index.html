@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Generation Trust — Genetic Research for Future Health</title>
+  <meta name="description" content="The Generation Trust is a UK registered charity advancing genomic medicine by backing promising early-career researchers with fast, flexible and high-impact funding." />
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="bg-field" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="The Generation Trust home">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="38" height="38" />
+        <span class="brand__text">The Generation Trust<small>Genomic Medicine · Est. 1983</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="about.html">About</a>
+        <a href="impact.html">Impact</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="about.html" class="btn btn--ghost">Our mission</a>
+        <a href="donate.html" class="btn btn--warm">Donate</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas id="dna-canvas" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">
+            <span class="pill">CIO</span>
+            <b>UK Registered Charity</b> No. 1211119
+          </span>
+          <h1>Genetic research for <span class="text-gradient">future health</span></h1>
+          <p class="hero__sub">
+            We are a strategic investor in genomic medicine — backing the brightest
+            early-career researchers with fast, flexible funding that turns bold ideas
+            into real-world clinical breakthroughs.
+          </p>
+          <div class="hero__actions">
+            <a href="donate.html" class="btn">Support our work <span class="btn-arrow">→</span></a>
+            <a href="impact.html" class="btn btn--ghost">See the impact</a>
+          </div>
+          <div class="hero__stats">
+            <div>
+              <div class="stat__num" data-count="1983" data-nogroup>0</div>
+              <div class="stat__label">Pioneering since</div>
+            </div>
+            <div>
+              <div class="stat__num" data-count="40" data-suffix="+">0</div>
+              <div class="stat__label">Years of funding</div>
+            </div>
+            <div>
+              <div class="stat__num" data-count="100" data-suffix="%">0</div>
+              <div class="stat__label">Focused on genomics</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__aside" data-reveal>
+          <p class="aside-tag">Partnership</p>
+          <h3>King's College London</h3>
+          <p>
+            We work hand-in-hand with the Department of Medical &amp; Molecular Genetics
+            and the Genomics Medicine Group to fund science that improves diagnosis,
+            screening and treatment.
+          </p>
+          <div class="aside-foot">
+            <div class="avatar">GMG</div>
+            <div>
+              <strong style="font-size:.95rem">Genomics Medicine Group</strong><br />
+              <span style="font-size:.8rem;color:var(--text-dim)">Guy's Hospital · London</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="mouse"></span>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Gene discovery <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Rare disease diagnosis <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Carrier screening <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Precision medicine <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Early-career researchers <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Therapeutic innovation <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <!-- duplicate for seamless loop -->
+        <span class="marquee__item">Gene discovery <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Rare disease diagnosis <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Carrier screening <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Precision medicine <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Early-career researchers <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+        <span class="marquee__item">Therapeutic innovation <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg></span>
+      </div>
+    </div>
+
+    <!-- ============ PILLARS ============ -->
+    <section class="section" id="what-we-do">
+      <div class="container">
+        <div data-reveal>
+          <span class="eyebrow">Why we exist</span>
+          <h2 class="section-title">A strategic partner at every stage of discovery</h2>
+          <p class="lede">
+            From the first identification of a genetic mechanism to precision tools in
+            the clinic, we provide the capital and confidence that lets high-impact
+            science move faster.
+          </p>
+        </div>
+
+        <div class="grid grid--3" style="margin-top:3rem">
+          <article class="card" data-reveal data-reveal-delay="1">
+            <span class="card__num">01</span>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 17v4M5 8l3 2M16 14l3 2M5 16l3-2M16 10l3-2" stroke-linecap="round"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Supporting promising researchers</h3>
+            <p>
+              We back early-career scientists so they can establish themselves and
+              compete for larger grants — filling a critical gap where less-established
+              researchers so often struggle to secure funding.
+            </p>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="2">
+            <span class="card__num">02</span>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Agile and flexible funding</h3>
+            <p>
+              With a lean structure and a longstanding, close relationship with Guy's
+              Hospital, we respond rapidly to funding requests — moving at the speed
+              that great research demands.
+            </p>
+          </article>
+
+          <article class="card" data-reveal data-reveal-delay="3">
+            <span class="card__num">03</span>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18M6 20V10M12 20V4M18 20v-7" stroke-linecap="round"/></svg>
+            </div>
+            <h3>High-impact funding</h3>
+            <p>
+              Beyond direct support, our grants act as a catalyst — helping researchers
+              unlock major institutional and government funding that multiplies every
+              pound we give.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION SPLIT ============ -->
+    <section class="section" id="mission">
+      <div class="container split">
+        <div class="split__media" data-reveal aria-hidden="true">
+          <div class="helix-visual">
+            <svg width="80%" viewBox="0 0 240 320" fill="none">
+              <defs>
+                <linearGradient id="m-g" x1="0" y1="0" x2="240" y2="320" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#22e3c0"/><stop offset="1" stop-color="#7b5cff"/>
+                </linearGradient>
+              </defs>
+              <g stroke="url(#m-g)" stroke-width="2.5" fill="none" opacity="0.9">
+                <path d="M70 10C70 70 170 90 170 160S70 250 70 310"/>
+                <path d="M170 10C170 70 70 90 70 160S170 250 170 310" opacity="0.5"/>
+              </g>
+              <g fill="url(#m-g)">
+                <circle cx="80" cy="40" r="4"/><circle cx="160" cy="40" r="4"/>
+                <circle cx="118" cy="85" r="4"/><circle cx="122" cy="85" r="4"/>
+                <circle cx="118" cy="160" r="4"/><circle cx="122" cy="160" r="4"/>
+                <circle cx="118" cy="235" r="4"/><circle cx="122" cy="235" r="4"/>
+                <circle cx="80" cy="280" r="4"/><circle cx="160" cy="280" r="4"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div data-reveal data-reveal-delay="1">
+          <span class="eyebrow">Our mission</span>
+          <h2 class="section-title">Funding the full trajectory of genomic innovation</h2>
+          <p class="lede">
+            Founded in 1983 at Guy's Hospital to pioneer genetic research into
+            paediatric conditions, The Generation Trust has evolved alongside the
+            genomics revolution. Today, as a Charitable Incorporated Organisation,
+            we act as a strategic partner to King's College London.
+          </p>
+          <ul class="feature-list">
+            <li><span class="tick">✓</span><span>Provide the strategic capital that supports the entire research ecosystem.</span></li>
+            <li><span class="tick">✓</span><span>Bridge the journey from identifying genetic mechanisms to clinical precision tools.</span></li>
+            <li><span class="tick">✓</span><span>Ensure high-impact science is supported at every stage of its development.</span></li>
+          </ul>
+          <div class="hero__actions" style="margin-top:2rem">
+            <a href="about.html" class="btn">About the Trust <span class="btn-arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IMPACT PREVIEW ============ -->
+    <section class="section" id="impact">
+      <div class="container">
+        <div data-reveal>
+          <span class="eyebrow">Real people, real breakthroughs</span>
+          <h2 class="section-title">The researchers we've helped launch</h2>
+          <p class="lede">A few years of the right funding at the right moment can shape an entire scientific career.</p>
+        </div>
+
+        <div class="grid grid--2" style="margin-top:3rem">
+          <article class="story" data-reveal data-reveal-delay="1">
+            <div class="story__avatar">JS</div>
+            <div>
+              <div class="story__meta">
+                <span class="story__tag">Researcher</span>
+              </div>
+              <h3>Jake Saklatvala</h3>
+              <p>
+                From a PhD building "bespoke virtual gene panels" for rare monogenic
+                disease to co-leading genome-wide studies across 5&nbsp;million
+                participants — our funding helped launch a leader in human genetics.
+              </p>
+              <a class="story__link" href="impact.html#jake">Read his story →</a>
+            </div>
+          </article>
+
+          <article class="story" data-reveal data-reveal-delay="2">
+            <div class="story__avatar">AA</div>
+            <div>
+              <div class="story__meta">
+                <span class="story__tag">Researcher</span>
+              </div>
+              <h3>Aminah Ali</h3>
+              <p>
+                A Generation Trust studentship helped attract an MRC fellow to King's and
+                supported Aminah's PhD — now an expert genome analyst whose mitochondrial
+                research drew global collaboration.
+              </p>
+              <a class="story__link" href="impact.html#aminah">Read her story →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band" data-reveal>
+          <span class="eyebrow" style="justify-content:center">Join us</span>
+          <h2>Help write the next chapter of genomic medicine</h2>
+          <p>
+            Every donation fuels the researchers and discoveries that will define how
+            we diagnose, screen and treat genetic conditions for generations to come.
+          </p>
+          <div class="hero__actions">
+            <a href="donate.html" class="btn btn--warm">Donate now <span class="btn-arrow">→</span></a>
+            <a href="contact.html" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" style="margin-bottom:1rem">
+            <img class="brand__mark" src="assets/img/logo.svg" alt="" width="38" height="38" />
+            <span class="brand__text">The Generation Trust<small>Genetic research for future health</small></span>
+          </a>
+          <p>A UK registered Charitable Incorporated Organisation (No. 1211119) advancing genomic medicine in partnership with King's College London.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="impact.html">Impact</a>
+          <a href="resources.html">Resources</a>
+        </div>
+        <div class="footer-col">
+          <h5>Get involved</h5>
+          <a href="donate.html">Donate</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:info@thegenerationtrust.org">Email us</a>
+        </div>
+        <div class="footer-col">
+          <h5>Find us</h5>
+          <p style="color:var(--text-dim);font-size:.92rem;line-height:1.7">
+            Dept of Medical &amp; Molecular Genetics<br />
+            8th Floor, Tower Wing, Guy's Hospital<br />
+            Great Maze Pond, London SE1 9RT
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> The Generation Trust · Registered Charity 1211119</span>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05 4.02 0 4.76 2.65 4.76 6.1V21h-4v-5.4c0-1.3-.02-2.96-1.8-2.96-1.8 0-2.08 1.4-2.08 2.86V21h-4V9Z"/></svg>
+          </a>
+          <a href="mailto:info@thegenerationtrust.org" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
