@@ -168,6 +168,17 @@
     });
   }
 
+  /* ---------- Trustee bio expand/collapse ---------- */
+  document.querySelectorAll(".person__more").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const person = btn.closest(".person");
+      if (!person) return;
+      const expanded = person.classList.toggle("is-expanded");
+      btn.setAttribute("aria-expanded", String(expanded));
+      btn.textContent = expanded ? "Read less" : "Read more";
+    });
+  });
+
   /* ---------- Footer year ---------- */
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

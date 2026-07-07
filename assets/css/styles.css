@@ -611,28 +611,81 @@ body.nav-open .nav-toggle span::after { transform: translate(-50%, 0) rotate(-45
 /* ---------- Trustees ---------- */
 .people {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 .person {
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: var(--radius);
   background: var(--glass);
   border: 1px solid var(--glass-border);
-  text-align: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.15rem 1.3rem;
+  align-content: start;
   transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
 }
 .person:hover { transform: translateY(-4px); border-color: rgba(34,227,192,0.4); }
+.person__photo,
 .person__avatar {
-  width: 64px; height: 64px; border-radius: 50%;
-  margin: 0 auto 0.9rem;
+  grid-row: span 2;
+  width: 92px; height: 92px; border-radius: 50%;
+  border: 2px solid rgba(34,227,192,0.35);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+.person__photo {
+  object-fit: cover; object-position: center top;
+}
+.person__avatar {
   display: grid; place-items: center;
   font-family: var(--font-display); font-weight: 700;
-  color: #05122a; font-size: 1.15rem;
+  color: #05122a; font-size: 1.5rem;
   background: var(--grad-brand);
 }
-.person h4 { font-size: 1.02rem; margin-bottom: 0.2rem; }
-.person span { font-size: 0.82rem; color: var(--text-dim); }
+.person h4 { font-size: 1.08rem; margin: 0; align-self: end; }
+.person__role { font-size: 0.82rem; color: var(--text-dim); align-self: start; }
+.person__bio {
+  grid-column: 1 / -1;
+  margin-top: 1rem;
+  max-height: 7.5em;
+  overflow: hidden;
+  position: relative;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  transition: max-height 0.5s var(--ease);
+}
+.person__bio p { margin: 0 0 0.7rem; }
+.person__bio p:last-child { margin-bottom: 0; }
+.person__bio::after {
+  content: "";
+  position: absolute; left: 0; right: 0; bottom: 0; height: 2.8em;
+  background: linear-gradient(rgba(12,17,38,0), rgba(12,17,38,0.9));
+  pointer-events: none;
+  transition: opacity 0.3s var(--ease);
+}
+.person.is-expanded .person__bio { max-height: 260em; }
+.person.is-expanded .person__bio::after { opacity: 0; }
+.person--short .person__bio { max-height: none; }
+.person--short .person__bio::after { display: none; }
+.person__actions {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: 1.2rem;
+  margin-top: 0.9rem;
+}
+.person__more {
+  background: none; border: none; cursor: pointer;
+  color: var(--cyan); font: inherit; font-size: 0.85rem; font-weight: 600;
+  padding: 0;
+}
+.person__more:hover { text-decoration: underline; }
+.person__linkedin {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-size: 0.85rem; font-weight: 600; color: var(--text-dim);
+  transition: color 0.3s var(--ease);
+}
+.person__linkedin:hover { color: var(--cyan); }
+.person__linkedin svg { width: 16px; height: 16px; fill: currentColor; }
 
 /* ---------- CTA band ---------- */
 .cta-band {
@@ -901,7 +954,7 @@ body.nav-open .nav-toggle span::after { transform: translate(-50%, 0) rotate(-45
   .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero__aside { max-width: 420px; }
   .grid--3 { grid-template-columns: 1fr 1fr; }
-  .people { grid-template-columns: repeat(3, 1fr); }
+  .people { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .split { grid-template-columns: 1fr; }
   .split--reverse .split__media { order: 0; }
@@ -934,7 +987,7 @@ body.nav-open .nav-toggle span::after { transform: translate(-50%, 0) rotate(-45
   .site-header.is-scrolled .brand__logo { height: 46px; }
   .footer-brand .brand__logo { height: 64px; }
   .grid--3, .grid--2 { grid-template-columns: 1fr; }
-  .people { grid-template-columns: 1fr 1fr; }
+  .people { grid-template-columns: 1fr; }
   .story { grid-template-columns: 1fr; }
   .story__avatar { width: 60px; height: 60px; }
   .amount-grid { grid-template-columns: 1fr 1fr; }
