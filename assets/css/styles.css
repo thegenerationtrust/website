@@ -652,24 +652,14 @@ body.nav-open .nav-toggle span::after { transform: translate(-50%, 0) rotate(-45
   margin-top: 1rem;
   max-height: 7.5em;
   overflow: hidden;
-  position: relative;
-  color: var(--text-dim);
+  color: var(--text-muted);
   font-size: 0.92rem;
   transition: max-height 0.5s var(--ease);
 }
 .person__bio p { margin: 0 0 0.7rem; }
 .person__bio p:last-child { margin-bottom: 0; }
-.person__bio::after {
-  content: "";
-  position: absolute; left: 0; right: 0; bottom: 0; height: 2.8em;
-  background: linear-gradient(rgba(12,17,38,0), rgba(12,17,38,0.9));
-  pointer-events: none;
-  transition: opacity 0.3s var(--ease);
-}
 .person.is-expanded .person__bio { max-height: 260em; }
-.person.is-expanded .person__bio::after { opacity: 0; }
 .person--short .person__bio { max-height: none; }
-.person--short .person__bio::after { display: none; }
 .person__actions {
   grid-column: 1 / -1;
   display: flex; align-items: center; gap: 1.2rem;
